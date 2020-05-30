@@ -1,0 +1,2 @@
+boto3==1.13.18
+certbot-dns-route53==1.4.0
