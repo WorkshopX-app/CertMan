@@ -4,7 +4,7 @@ Automatic Renew Cert Without Server.
 
 ## ENV
 
-- `REGION` aws region default: us-west-2
+- `REGION` aws region
 - `BUCKET` s3 bucket as the cert storage
 - `EMAIL` certbot email address for important account notifications
 - `DOMAIN` Domain names to apply
