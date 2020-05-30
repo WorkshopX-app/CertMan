@@ -19,8 +19,9 @@ Automatic Renew Cert Without Server.
 
 ## Powered By
 
-- lamada
-- s3
+- chalice
+- aws lamada
+- aws s3
 - certbot
 - certbot-dns-*
   - route53
