@@ -2,6 +2,10 @@
 
 Automatic Renew Cert Without Server.
 
+## How it Works
+
+Cloudwatch scheduled event Call A lamada Function（Do Cert Request [Let's Encrypt](https://letsencrypt.org/) Every 30 days, All Cert files flush to S3 bucket.
+
 ## ENV
 
 - `REGION` aws region
@@ -15,13 +19,18 @@ Automatic Renew Cert Without Server.
 
 ## Deploy
 
-- ```chalice deploy --no-autogen-policy```
+- set up aws credentials
+- install [pipenv](https://github.com/pypa/pipenv#installation)
+- `pipenv install`
+- `cd man`
+- `pipenv run chalice deploy --no-autogen-policy`
 
 ## Powered By
 
 - chalice
 - aws lamada
 - aws s3
+- aws cloudwatch
 - certbot
 - certbot-dns-*
   - route53
